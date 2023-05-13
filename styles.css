@@ -1,37 +1,11 @@
-:root {
-    --color-white: #fff;
-    --color-white-80a: rgba(255,255,255,0.8);
-    --color-white-40a: rgba(255,255,255,0.4);
-    --color-white-deep: #fafafa;
-    --color-grey-light: #f7f7f7;
-    --color-grey: #eeeef0;
-    --color-grey-dark: #dddddf;
-    --color-blue-dark: #1a202a;
-    --color-blue-dark-70a: rgba(26,32,42,0.70196);
-    --color-blue-dark-40a: rgba(26,32,42,0.4);
-    --color-red: #d74a4a;
-    --color-red-bright: #db2f2f;
-    --color-red-dark: #c33535;
-    --color-text-primery: var(--color-blue-dark-70a);
-    --color-text-secondary: var(--color-blue-dark-40a);
-    --color-text-title: var(--color-blue-dark);
-    --color-link-primery: var(--color-blue-dark-70a);
-    --color-link-hover: var(--color-blue-dark);
-    --color-btn-primery: var(--color-red);
-    --color-btn-hover: var(--color-red-bright);
-    --color-btn-active: var(--color-red-dark);
-    --color-bg-primery: var(--color-grey-light);
-    --color-bg-dark: var(--color-blue-dark);
-    --color-btn-secondary: var(--color-grey);
-    --color-btn-seconadry-hover: var(--color-grey-dark)
-}
+
 
 @font-face {
     font-family: "Bebas Neue";
     font-weight: 700;
     font-style: normal;
     font-display: swap;
-    src: url(fonts/BebasNeue-700.woff2) format("woff2")
+    src: url(/fonts/BebasNeue-700.woff2) format("woff2")
 }
 
 @font-face {
@@ -39,7 +13,7 @@
     font-weight: 500;
     font-style: normal;
     font-display: swap;
-    src: url(fonts/montserrat-500.woff2) format("woff2")
+    src: url(/fonts/montserrat-500.woff2) format("woff2")
 }
 
 @font-face {
@@ -47,7 +21,7 @@
     font-weight: 800;
     font-style: normal;
     font-display: swap;
-    src: url(fonts/montserrat-800.woff2) format("woff2")
+    src: url(/fonts/montserrat-800.woff2) format("woff2")
 }
 
 *{
@@ -63,8 +37,8 @@ body {
     min-width: 320px;
     font-family: "Montserrat",sans-serif;
     font-weight: 500;
-    color: var(--color-text-primery);
-    background-color: var(--color-bg-primery)
+    color: rgba(26,32,42,0.70196);
+    background-color: #f7f7f7;
 }
 
 .container__head
@@ -216,7 +190,7 @@ input{
 
 .footer__wrap{
     width: 100%;
-    padding: 85px 52px 50px;
+    padding: 60px 52px 40px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -236,3 +210,173 @@ input{
     width: 32px;
     margin-right: 16px;
 }
+
+a{
+    text-decoration: none;
+}
+
+.service__btn{
+    color: white;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+}
+
+.service__btn{
+
+}
+
+.services{
+    color: white;
+    background-blend-mode: darken;
+    background-color: rgba(25,32,42,.90196);
+    background-image: url(images/services-bg@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-left: 140px;
+    padding-bottom: 35px;
+    font-size: 20px;
+    display: flex;
+}
+
+.services__blur-wrapper{
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+}
+
+.services__wrapper{
+    padding: 70px 20px;
+}
+
+.services__div{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 60px;
+}
+
+.services__names{
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.services__names__txt{
+    margin-bottom: 30px;
+}
+
+.services__info{
+    width: 100%;
+    font-size: 20px;
+    color: #ffffffcc;
+}
+
+b{
+    color: white;
+}
+
+.services__info__h{
+    margin-bottom: 38px;
+}
+
+.services__info__txt{
+    display: flex;
+}
+
+.services__info__time{
+    margin-right: 100px;
+}
+
+.services__p{
+    margin-bottom: 20px;
+}
+
+.services__pp{
+    margin-bottom: 10px;
+}
+
+
+/*
+.services{
+    color: white;
+    background-blend-mode: darken;
+    background-color: rgba(25,32,42,.90196);
+    background-image: url(images/services-bg@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.services__blur-wrapper{
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+}
+
+.services__wrapper{
+    padding: 70px 20px;
+}
+
+.services__title{
+    margin: 0 0 30px;
+    color:  #fff;
+}
+
+.title--h2{
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+.title{
+    position: relative;
+    font-weight: 700;
+}
+
+.services__content-wrapper{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+}
+
+.services__select{
+    margin-bottom: 43px;
+}
+
+.custom-select{
+    position: relative;
+}
+
+.custom-select__bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 19px 20px 17px;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 800;
+    transition: background-color .5s ease;
+}
+
+.custom-select__options{
+    position: absolute;
+    left: 0;
+    top: 70px;
+    z-index: 5;
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+}
+
+.custom-select__options{
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 0;
+}*/
