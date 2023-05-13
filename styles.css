@@ -215,17 +215,6 @@ a{
     text-decoration: none;
 }
 
-.service__btn{
-    color: white;
-    font-size: 24px;
-    background-color: transparent;
-    border: none;
-    text-align: left;
-}
-
-.service__btn{
-
-}
 
 .services{
     color: white;
@@ -247,26 +236,29 @@ a{
 }
 
 .services__wrapper{
-    padding: 70px 20px;
+    padding: 70px 20px 0;
 }
 
 .services__div{
-    display: flex;
-    justify-content: space-between;
-    padding-right: 60px;
-}
-
-.services__names{
-    margin-right: 70px;
+    margin-top: 90px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 60px;
 }
 
+.service__div{
+    display: grid;
+    grid-template-columns: 25% 55%;
+    margin-bottom: 70px;
+}
+
+
 .services__names__txt{
+    margin-right: 70px;
     margin-bottom: 30px;
 }
 
-.services__info{
+.service__txt{
     width: 100%;
     font-size: 20px;
     color: #ffffffcc;
@@ -296,87 +288,3 @@ b{
     margin-bottom: 10px;
 }
 
-
-/*
-.services{
-    color: white;
-    background-blend-mode: darken;
-    background-color: rgba(25,32,42,.90196);
-    background-image: url(images/services-bg@1x.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.services__blur-wrapper{
-    -webkit-backdrop-filter: blur(7px);
-    backdrop-filter: blur(7px);
-}
-
-.services__wrapper{
-    padding: 70px 20px;
-}
-
-.services__title{
-    margin: 0 0 30px;
-    color:  #fff;
-}
-
-.title--h2{
-    font-size: 48px;
-    line-height: 1.1;
-}
-
-.title{
-    position: relative;
-    font-weight: 700;
-}
-
-.services__content-wrapper{
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    column-gap: 20px;
-}
-
-.services__select{
-    margin-bottom: 43px;
-}
-
-.custom-select{
-    position: relative;
-}
-
-.custom-select__bar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 19px 20px 17px;
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 1.75;
-    font-weight: 800;
-    transition: background-color .5s ease;
-}
-
-.custom-select__options{
-    position: absolute;
-    left: 0;
-    top: 70px;
-    z-index: 5;
-    display: none;
-    width: 100%;
-    margin: 0;
-    padding: 20px;
-    list-style: none;
-}
-
-.custom-select__options{
-    position: relative;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 0;
-    padding-bottom: 0;
-}*/
