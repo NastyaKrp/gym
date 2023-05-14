@@ -4,19 +4,12 @@
     <meta charset="UTF-8">
     <title>Gym</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link href="styles.css" rel="stylesheet">
     <script src="main.js"></script>
 </head>
 <body>
 
-<button id="open-modal">Открыть окно</button>
-
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Текст всплывающего окна здесь</p>
-    </div>
-</div>
   <header>
       <div class="container__head">
           <div class="head__left">
@@ -27,30 +20,55 @@
                   <p class="header__address__txt">а/г Ждановичи, ул. Парковая, 2</p>
               </div>
           </div>
-          <p class="head__number">+375 (25) 549-66-22</p>
+          <div class="head__number__popup">
+              <p class="head__number">+375 (25) 549-66-22</p>
+              <div class="popup">
+                  <div class="b-container">
+                      <a href="javascript:PopUpShow1()" style="color: #1a202a;">Авторизация</a>
+                  </div>
+                  <div class="b-container">
+                      <a href="javascript:PopUpShow2()" style="color: #1a202a;">Регистрация</a>
+                  </div>
+              </div>
+          </div>
       </div>
   </header>
 
 
-  <div class="auth-container">
-      <div class="login-form">
-          <h2>Авторизация</h2>
-          <form class="form__div">
-              <input type="email" id="login-email" name="login-email" placeholder="Электронная почта" required><br>
-              <input type="password" id="login-password" name="login-password" placeholder="Пароль" required><br>
-              <input type="submit" value="Войти">
-          </form>
-      </div>
-      <div class="register-form">
-          <h2>Регистрация</h2>
-          <form class="form__div">
-              <input type="text" id="register-name" name="register-name" placeholder="Имя" required><br>
-              <input type="email" id="register-email" name="register-email" placeholder="Электронная почта" required><br>
-              <input type="password" id="register-password" name="register-password" placeholder="Пароль" required><br>
-              <input type="submit" value="Зарегистрироваться"><br>
-          </form>
+  <div class="b-popup" id="popup1">
+      <div class="b-popup-content">
+          <div class="login-form">
+              <div class="popup__head">
+                  <h2>Авторизация</h2>
+                  <a href="javascript:PopUpHide1()" style="color: #1a202a;" class="cross">&times;</a>
+              </div>
+              <form class="form__div">
+                  <input type="email" id="login-email" name="login-email" placeholder="Электронная почта" required><br>
+                  <input type="password" id="login-password" name="login-password" placeholder="Пароль" required><br>
+                  <input type="submit" value="Войти">
+              </form>
+          </div>
+
       </div>
   </div>
+
+  <div class="b-popup" id="popup2">
+      <div class="b-popup-content">
+          <div class="register-form">
+              <div class="popup__head">
+                  <h2>Регистрация</h2>
+                  <a href="javascript:PopUpHide2()" style="color: #1a202a;" class="cross">&times;</a>
+              </div>
+              <form class="form__div">
+                  <input type="text" id="register-name" name="register-name" placeholder="Имя" required><br>
+                  <input type="email" id="register-email" name="register-email" placeholder="Электронная почта" required><br>
+                  <input type="password" id="register-password" name="register-password" placeholder="Пароль" required><br>
+                  <input type="submit" value="Зарегистрироваться"><br>
+              </form>
+          </div>
+      </div>
+  </div>
+
 
 <div class="start__screen">
     <div class="start__screen__txt">

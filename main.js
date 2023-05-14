@@ -1,25 +1,16 @@
-// Получаем ссылку на кнопку "Открыть окно"
-var openModalBtn = document.getElementById("open-modal");
-
-// Получаем ссылку на всплывающее окно
-var modal = document.getElementById("myModal");
-
-// Получаем ссылку на элемент закрытия окна
-var closeBtn = document.getElementsByClassName("close")[0];
-
-// Когда пользователь кликает на кнопку, открываем окно
-openModalBtn.onclick = function() {
-    modal.style.display = "block";
+$(document).ready(function(){
+    PopUpHide1();
+});
+function PopUpShow1(){
+    $("#popup1").show();
+}
+function PopUpHide1(){
+    $("#popup1").hide();
 }
 
-// Когда пользователь кликает на крестик (x), закрываем окно
-closeBtn.onclick = function() {
-    modal.style.display = "none";
+function PopUpShow2(){
+    $("#popup2").show();
 }
-
-// Когда пользователь кликает вне окна, закрываем его
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+function PopUpHide2(){
+    $("#popup2").hide();
 }
