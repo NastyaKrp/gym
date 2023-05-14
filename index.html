@@ -5,8 +5,18 @@
     <title>Gym</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
+    <script src="main.js"></script>
 </head>
 <body>
+
+<button id="open-modal">Открыть окно</button>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Текст всплывающего окна здесь</p>
+    </div>
+</div>
   <header>
       <div class="container__head">
           <div class="head__left">
@@ -20,6 +30,28 @@
           <p class="head__number">+375 (25) 549-66-22</p>
       </div>
   </header>
+
+
+  <div class="auth-container">
+      <div class="login-form">
+          <h2>Авторизация</h2>
+          <form class="form__div">
+              <input type="email" id="login-email" name="login-email" placeholder="Электронная почта" required><br>
+              <input type="password" id="login-password" name="login-password" placeholder="Пароль" required><br>
+              <input type="submit" value="Войти">
+          </form>
+      </div>
+      <div class="register-form">
+          <h2>Регистрация</h2>
+          <form class="form__div">
+              <input type="text" id="register-name" name="register-name" placeholder="Имя" required><br>
+              <input type="email" id="register-email" name="register-email" placeholder="Электронная почта" required><br>
+              <input type="password" id="register-password" name="register-password" placeholder="Пароль" required><br>
+              <input type="submit" value="Зарегистрироваться"><br>
+          </form>
+      </div>
+  </div>
+
 <div class="start__screen">
     <div class="start__screen__txt">
         <h1>становись лучше<br> среди своих</h1>
@@ -28,6 +60,8 @@
     </div>
     <img src="images/main-slider@2x.png" alt="" class="start__screen__img">
 </div>
+
+
 
   <div class="services">
       <div class="services__blur-wrapper">
