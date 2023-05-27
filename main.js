@@ -15,6 +15,7 @@ function PopUpHide2(){
     $("#popup2").hide();
 }
 
+
 var GymInfo = [
     {
         id: '1', description: 'Описание тренера', createdAt: '14-03-2023', author: 'Владислав Бобовоз',

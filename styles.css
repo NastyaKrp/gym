@@ -376,3 +376,32 @@ a{
     font-size: 30px;
     margin-left: auto;
 }
+
+
+.comments{
+    display: flex;
+    margin: 20px 50px 20px;
+}
+
+.comment{
+    margin-bottom: 30px;
+}
+
+.gym__check__dom{
+    padding: 70px 50px 20px;
+    background-color: #1a202a;
+    color: #c5c5c5;
+}
+
+.gym__array{
+    margin-bottom: 40px;
+}
+
+.id__span{
+    color: #db2f2f;
+    font-size: 18px;
+}
+
+.gym__array__p{
+    margin-top: 15px;
+}
